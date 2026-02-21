@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kartick Dutta | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1f4037, #99f2c8);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        section {
+            padding: 60px 10%;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 28px;
+            position: relative;
+        }
+
+        h2::after {
+            content: "";
+            width: 60px;
+            height: 4px;
+            background: #1f4037;
+            display: block;
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        ul li {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        footer {
+            background: #1f4037;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 768px){
+            header h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Kartick Dutta</h1>
+        <p>Full Stack Developer | Django | PHP | Power Automate</p>
+    </header>
+
+    <!-- About Section -->
+    <section>
+        <h2>About Me</h2>
+        <div class="card">
+            <p>
+                I am a backend-focused developer with experience in Django, PHP, Node.js, 
+                MongoDB, MySQL, Power Automate, and SAP integrations. 
+                I enjoy building APIs, automation workflows, and enterprise-level solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>Python & Django</li>
+            <li>PHP & Apache</li>
+            <li>Node.js & MongoDB</li>
+            <li>React & IIS Hosting</li>
+            <li>Power Automate</li>
+            <li>SAP API Integration</li>
+            <li>MySQL & Database Design</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section>
+        <h2>Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="card">
+                <h3>Customer DMS Portal</h3>
+                <p>
+                    Developed backend APIs using Django to integrate SAP data, 
+                    manage Sales Orders, and handle PO uploads.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Invoice OCR Automation</h3>
+                <p>
+                    Built an OCR-based invoice processing system with automated 
+                    validation and SAP posting logic.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Onboarding App</h3>
+                <p>
+                    Created an onboarding application using PowerApps and SharePoint 
+                    for managing employee data and approvals.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+        <h2>Contact</h2>
+        <div class="card contact">
+            <p><strong>Email:</strong> kartickdutta2153@gmail.com</p>
+            <p><strong>Phone:</strong> +91-9163643343</p>
+            <p><strong>Location:</strong> India</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Kartick Dutta. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
