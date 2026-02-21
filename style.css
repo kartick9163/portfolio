@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1f4037, #99f2c8);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Sections */
+section {
+    padding: 60px 10%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #1f4037;
+    display: block;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/* Card Style */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Skills Grid */
+.skills {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.skills li {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* Projects Grid */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background: #1f4037;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+    header h1 {
+        font-size: 30px;
+    }
+}
+/* Social Links Professional Style */
+.social-links {
+    margin-top: 25px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    margin: 0 10px;
+    background: white;
+    color: #1f4037;
+    border-radius: 50%;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #1f4037;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
